@@ -39,7 +39,7 @@ A custom graphical interface developed in Python (PySide/PyQt) to visualize the 
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 *   **Hardware:** STM32 ST-LINK Utility or OpenOCD.
@@ -63,7 +63,7 @@ A custom graphical interface developed in Python (PySide/PyQt) to visualize the 
 
 ---
 
-## 🔬 Current Development Status
+## Current Development Status
 *   [x] Custom PCB schematic and layout finalized.
 *   [x] Virtual COM port pipeline validated (84-byte payload @ 200Hz).
 *   [x] Python GUI rendering stable high-speed sensor plots.
