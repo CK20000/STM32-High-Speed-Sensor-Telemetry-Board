@@ -1,0 +1,190 @@
+/* =========================================
+   MASTER QSS (The Opera GX Aesthetic)
+========================================= */
+
+/* --- FORCE GLOBAL DARK MODE --- */
+QWidget {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Main Window Background */
+QMainWindow {
+    background-color: #0f0f13; 
+}
+
+/* --- THE NEW HORIZONTAL TAB BAR --- */
+QTabWidget::pane { 
+    border: none; 
+    background-color: #0f0f13; 
+    border-top: 1px solid #2a2a35;
+}
+QTabBar::tab {
+    background-color: #1a1a24;
+    color: #8a8a93;
+    padding: 10px 25px;
+    border-top: 2px solid transparent;
+    margin-right: 2px;
+    font-family: 'Segoe UI'; 
+    font-weight: bold; 
+    font-size: 12px;
+}
+/* The active open document tab */
+QTabBar::tab:selected {
+    background-color: #0f0f13;
+    color: #ffffff;
+    border-top: 2px solid #fa1e4e; /* Glowing neon red for Documents */
+}
+QTabBar::tab:hover:!selected { 
+    background-color: #2a2a35; 
+}
+
+/* The Close Button on Tabs */
+QTabBar::close-button {
+    background: transparent;
+}
+QTabBar::close-button:hover { 
+    background: #fa1e4e; 
+    border-radius: 2px; 
+}
+
+/* Force all Tab content and Stacked Widgets to be dark */
+QStackedWidget, QWidget#sensorTab {
+    background-color: #0f0f13;
+}
+
+/* Ensure our text stays white on the new dark tabs[cite: 2] */
+QWidget#sensorTab QLabel {
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* --- CUSTOM TITLE BAR --- */
+#titleBar {
+    background-color: transparent; 
+}
+
+/* THE NEW BIG RED TITLE TEXT */
+QLabel#mainTitle {
+    color: #fa1e4e; 
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 25px; 
+    font-weight: bold;
+    padding-left: 30px; 
+    letter-spacing: 2px;
+}
+
+/* THE RED TITLE BAR BUTTONS */
+QPushButton#titleBtn, QPushButton#closeBtn {
+    background-color: transparent;
+    color: #fa1e4e; 
+    font-weight: bold;
+    font-size: 18px; 
+    border: none;
+    padding: 5px 15px;
+}
+QPushButton#titleBtn:hover {
+    background-color: rgba(250, 30, 78, 0.15); 
+    color: #ffffff;
+}
+QPushButton#closeBtn:hover {
+    background-color: #fa1e4e; 
+    color: #ffffff;
+}
+
+/* Sidebar Placeholder */
+#sideBar {
+    background-color: #1a1a24;
+    border-right: 1px solid #2a2a35;
+}
+
+/* --- SIDEBAR BUTTONS[cite: 2] --- */
+QPushButton#sidebarBtn {
+    background-color: transparent;
+    color: #fa1e4e;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+QPushButton#sidebarBtn:hover {
+    background-color: rgba(250, 30, 78, 0.1);
+}
+QPushButton#sidebarBtn:checked {
+    background-color: rgba(250, 30, 78, 0.2);
+    border-left: 3px solid #fa1e4e;
+}
+
+/* --- GLOWING SECTION TOGGLE BUTTONS (Header Stream)[cite: 2] --- */
+QPushButton#streamToggle {
+    background-color: #0f0f13;
+    color: #8a8a93; 
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #2a2a35;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+QPushButton#streamToggle:hover {
+    background-color: #1a1a24;
+    border-color: #4a4a55;
+}
+QPushButton#streamToggle:checked {
+    background-color: rgba(250, 30, 78, 0.15); 
+    color: #ffffff;
+    border-color: #fa1e4e; 
+}
+
+/* --- TINY CORNER BUTTONS (View modes/datasheets/pings)[cite: 2] --- */
+QPushButton#tinyActionBtn, QPushButton#actionBtn {
+    background-color: transparent;
+    color: #00ffcc; 
+    font-size: 12px;
+    border: 1px solid #00ffcc;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+QPushButton#tinyActionBtn:hover {
+    background-color: rgba(0, 255, 204, 0.1);
+}
+QPushButton#tinyActionBtn:checked {
+    background-color: rgba(0, 255, 204, 0.2);
+    color: #ffffff;
+}
+
+/* --- ESC SAFETY BLOCK (Locked, Gray)[cite: 2] --- */
+QFrame#escFrame {
+    border: 2px solid #555555; 
+    border-radius: 8px;
+    padding: 10px;
+}
+QFrame#escFrame QLabel {
+    color: #888888; 
+}
+QFrame#escFrame QComboBox {
+    background-color: #1a1a24;
+    border: 1px solid #555555;
+    color: #888888;
+}
+
+/* The ARM button (Starts LOCKED and gray)[cite: 2] --- */
+QPushButton#armEscBtn {
+    background-color: #555555; 
+    color: #888888;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/* --- HACKER CONSOLE (Tab 6, Quick Debug)[cite: 2] --- */
+QTextEdit#gxConsole {
+    background-color: #050508; 
+    color: #00ffcc; 
+    font-family: 'Consolas', monospace; 
+    font-size: 14px;
+    border: 1px solid #2a2a35;
+    border-radius: 5px;
+    padding: 10px;
+}
