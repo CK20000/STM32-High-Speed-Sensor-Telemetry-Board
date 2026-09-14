@@ -1,0 +1,14 @@
+# GUI Framework
+PySide6>=6.5.0
+
+# Real-Time Plotting & Data Visualization
+pyqtgraph>=0.13.0
+
+# High-Speed Numerical Operations & Data Buffering
+numpy>=1.24.0
+
+# Serial Communication (Virtual COM Port interface)
+pyserial>=3.5
+
+# Optional: Modern Dark Theme Support (if using custom Qt styling)
+# qdarktheme>=2.1.0
