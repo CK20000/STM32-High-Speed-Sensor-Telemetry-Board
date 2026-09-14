@@ -37,7 +37,7 @@ A custom graphical interface developed in Python (PySide/PyQt) to visualize the 
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 *   **Hardware:** STM32 ST-LINK Utility or OpenOCD.
