@@ -10,6 +10,8 @@ This repository contains the full hardware, firmware, and software stack for a c
 
 The architecture bridges custom PCB design, non-blocking C++ embedded firmware, and a modular Python dashboard to provide real-time telemetry, enabling precise tracking of stable motor rotation and load variables at high velocities.
 
+<img width="1600" height="900" alt="WhatsApp Image 2026-08-07 at 17 46 26" src="https://github.com/user-attachments/assets/13222e0f-52a5-4af0-b514-0018855f14e5" />
+
 ---
 
 ## System Architecture
